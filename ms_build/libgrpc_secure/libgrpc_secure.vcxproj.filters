@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="security">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="security\context">
+      <UniqueIdentifier>{cc6ca0ed-f382-4f5b-8d4e-6351ef9e5227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security\credentials">
+      <UniqueIdentifier>{921ba9f9-86be-4203-83ad-8eaef31bc9b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security\security_connector">
+      <UniqueIdentifier>{88cb231a-0995-43f0-bf10-eac93eef9ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport">
+      <UniqueIdentifier>{a0ca5346-a6af-447e-9537-015c0fdab60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security\util">
+      <UniqueIdentifier>{8c851be2-7db2-444a-bd36-95526db5c3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="surface">
+      <UniqueIdentifier>{5345b147-cdbc-4c43-932a-fee5c56235db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\lib\http\httpcli_security_connector.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\context\security_context.cc">
+      <Filter>security\context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\alts_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\composite\composite_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\credentials_metadata.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\fake\fake_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\google_default\credentials_generic.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\google_default\google_default_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\iam\iam_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\jwt\json_token.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\jwt\jwt_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\jwt\jwt_verifier.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\local\local_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\oauth2\oauth2_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\plugin\plugin_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\ssl\ssl_credentials.cc">
+      <Filter>security\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\alts_security_connector.cc">
+      <Filter>security\security_connector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\load_system_roots_fallback.cc">
+      <Filter>security\security_connector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\load_system_roots_linux.cc">
+      <Filter>security\security_connector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\local_security_connector.cc">
+      <Filter>security\security_connector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\security_connector.cc">
+      <Filter>security\security_connector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\transport\client_auth_filter.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\transport\secure_endpoint.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\transport\security_handshaker.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\transport\server_auth_filter.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\transport\target_authority_table.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\transport\tsi_error.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\util\json_util.cc">
+      <Filter>security\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\init_secure.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\lib\security\context\security_context.h">
+      <Filter>security\context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\alts\alts_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\composite\composite_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\fake\fake_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\google_default\google_default_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\iam\iam_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\jwt\json_token.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\jwt\jwt_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\jwt\jwt_verifier.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\local\local_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\oauth2\oauth2_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\plugin\plugin_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\ssl\ssl_credentials.h">
+      <Filter>security\credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\alts_security_connector.h">
+      <Filter>security\security_connector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\load_system_roots.h">
+      <Filter>security\security_connector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\load_system_roots_linux.h">
+      <Filter>security\security_connector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\local_security_connector.h">
+      <Filter>security\security_connector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\security_connector.h">
+      <Filter>security\security_connector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\transport\auth_filters.h">
+      <Filter>transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\transport\secure_endpoint.h">
+      <Filter>transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\transport\security_handshaker.h">
+      <Filter>transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\transport\target_authority_table.h">
+      <Filter>transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\transport\tsi_error.h">
+      <Filter>transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\util\json_util.h">
+      <Filter>security\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

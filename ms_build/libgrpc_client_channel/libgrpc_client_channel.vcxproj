@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\backup_poller.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\channel_connectivity.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\client_channel.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\client_channel_channelz.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\client_channel_factory.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\client_channel_plugin.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\connector.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\http_connect_handshaker.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\http_proxy.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\lb_policy.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\lb_policy_factory.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\lb_policy_registry.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\method_params.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\parse_address.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\proxy_mapper.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\proxy_mapper_registry.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\resolver.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\resolver_registry.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\retry_throttle.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\subchannel.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\subchannel_index.cc" />
+    <ClCompile Include="..\..\src\core\ext\filters\client_channel\uri_parser.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\backup_poller.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\client_channel.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\client_channel_channelz.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\client_channel_factory.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\connector.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\http_connect_handshaker.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\http_proxy.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\lb_policy.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\lb_policy_factory.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\lb_policy_registry.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\method_params.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\parse_address.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\proxy_mapper.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\proxy_mapper_registry.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\resolver.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\resolver_factory.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\resolver_registry.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\retry_throttle.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\subchannel.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\subchannel_index.h" />
+    <ClInclude Include="..\..\src\core\ext\filters\client_channel\uri_parser.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{39bc316f-b18b-4d62-a518-2ea0fd09ff08}</ProjectGuid>
+    <RootNamespace>libgrpcclientchannel</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../include;$(ProjectDir)../../;$(SolutionDir)system/external/nanopb-c;$(SolutionDir)system/external/zlib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="alts">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{3183bbb2-c09f-46cd-af81-5d36c27577a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="session_cache">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\alts_handshaker_client.cc">
+      <Filter>alts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\alts_tsi_event.cc">
+      <Filter>alts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\alts_tsi_handshaker.cc">
+      <Filter>alts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\alts_tsi_utils.cc">
+      <Filter>alts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts_transport_security.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\fake_transport_security.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\local_transport_security.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\transport_security_grpc.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\ssl_transport_security.cc">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\ssl\session_cache\ssl_session_boringssl.cc">
+      <Filter>session_cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\ssl\session_cache\ssl_session_cache.cc">
+      <Filter>session_cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\ssl\session_cache\ssl_session_openssl.cc">
+      <Filter>session_cache</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\alts_handshaker_client.h">
+      <Filter>alts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\alts_tsi_event.h">
+      <Filter>alts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\alts_tsi_handshaker.h">
+      <Filter>alts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\alts_tsi_handshaker_private.h">
+      <Filter>alts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\alts_tsi_utils.h">
+      <Filter>alts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\transport_security_grpc.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts_transport_security.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\fake_transport_security.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\local_transport_security.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\ssl_transport_security.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\ssl_types.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\ssl\session_cache\ssl_session.h">
+      <Filter>session_cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\ssl\session_cache\ssl_session_cache.h">
+      <Filter>session_cache</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

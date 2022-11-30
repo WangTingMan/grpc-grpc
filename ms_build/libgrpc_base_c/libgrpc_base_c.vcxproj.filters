@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="avl">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="backoff">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="channel">
+      <UniqueIdentifier>{34a5ba9c-137c-4f64-bc38-4300c9c0e7ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compression">
+      <UniqueIdentifier>{144ff733-489b-4f6f-be9e-b65d5f021eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compression\header">
+      <UniqueIdentifier>{7d002bc8-baf3-4480-9cef-5defd25a12e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug">
+      <UniqueIdentifier>{f11c7248-0c67-4969-82e1-976c60dae039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{1504f4de-5a0e-419c-b2e2-874be51d8c18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iomgr">
+      <UniqueIdentifier>{8105c723-170d-448f-83b7-7c8b4ee0720e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{7477c201-7890-4056-8789-d74499270d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iomgr\header">
+      <UniqueIdentifier>{dd324066-a3d3-44e4-bb63-6a76cba46bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slice">
+      <UniqueIdentifier>{162e8366-f4b2-49d5-baf2-c66a35540b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="surface">
+      <UniqueIdentifier>{3902f41e-7fba-4438-b37b-70ba3bd2ad44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport">
+      <UniqueIdentifier>{1bb41838-3275-4f3a-bb58-c00c42343152}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\lib\avl\avl.cc">
+      <Filter>avl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\backoff\backoff.cc">
+      <Filter>backoff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\channel_args.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\channel_stack.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\channel_stack_builder.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\channel_trace.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\channelz.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\channelz_registry.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\connected_channel.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\handshaker.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\handshaker_factory.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\handshaker_registry.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\channel\status_util.cc">
+      <Filter>channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\compression\compression.cc">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\compression\compression_internal.cc">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\compression\message_compress.cc">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\compression\stream_compression.cc">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\compression\stream_compression_gzip.cc">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\compression\stream_compression_identity.cc">
+      <Filter>compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\debug\stats.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\debug\stats_data.cc">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\http\format_request.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\http\httpcli.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\http\parser.cc">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\buffer_list.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\call_combiner.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\combiner.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\endpoint.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\endpoint_pair_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\endpoint_pair_uv.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\endpoint_pair_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\error.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\ev_epoll1_linux.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\ev_epollex_linux.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\ev_epollsig_linux.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\ev_poll_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\ev_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\ev_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\exec_ctx.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\executor.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\fork_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\fork_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\gethostname_fallback.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\gethostname_host_name_max.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\gethostname_sysconf.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\internal_errqueue.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\iocp_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\iomgr.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\iomgr_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\iomgr_internal.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\iomgr_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\is_epollexclusive_available.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\load_file.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\lockfree_event.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\network_status_tracker.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\polling_entity.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\pollset.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\pollset_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\pollset_set.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\pollset_set_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\pollset_set_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\pollset_uv.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\pollset_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\resolve_address.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\resolve_address_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\resolve_address_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\resolve_address_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\resource_quota.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\sockaddr_utils.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_factory_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_mutator.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_utils_common_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_utils_linux.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_utils_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_utils_uv.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_utils_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\socket_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_client.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_client_cfstream.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_client_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_client_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_client_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_server.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_server_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_server_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_server_utils_posix_common.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_server_utils_posix_ifaddrs.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_server_utils_posix_noifaddrs.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_server_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_uv.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\tcp_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\time_averaged_stats.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\timer.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\timer_custom.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\timer_generic.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\timer_heap.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\timer_manager.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\timer_uv.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\udp_server.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\unix_sockets_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\unix_sockets_posix_noop.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\wakeup_fd_cv.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\wakeup_fd_eventfd.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\wakeup_fd_nospecial.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\wakeup_fd_pipe.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\wakeup_fd_posix.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\json\json.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\json\json_reader.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\json\json_string.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\json\json_writer.cc">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\slice\b64.cc">
+      <Filter>slice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\slice\percent_encoding.cc">
+      <Filter>slice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\slice\slice.cc">
+      <Filter>slice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\slice\slice_buffer.cc">
+      <Filter>slice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\slice\slice_intern.cc">
+      <Filter>slice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\slice\slice_string_helpers.cc">
+      <Filter>slice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\api_trace.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\byte_buffer.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\byte_buffer_reader.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\call.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\call_details.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\call_log_batch.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\channel.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\channel_init.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\channel_ping.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\channel_stack_type.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\completion_queue.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\completion_queue_factory.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\event_string.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\metadata_array.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\server.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\validate_metadata.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\surface\version.cc">
+      <Filter>surface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\bdp_estimator.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\byte_stream.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\connectivity_state.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\error_utils.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\metadata.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\metadata_batch.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\pid_controller.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\service_config.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\static_metadata.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\status_conversion.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\status_metadata.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\timeout_encoding.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\transport.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\transport\transport_op_string.cc">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\iomgr\iomgr_windows.cc">
+      <Filter>iomgr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\lib\avl\avl.h">
+      <Filter>avl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\backoff\backoff.h">
+      <Filter>backoff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\channel_args.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\channel_stack.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\channel_stack_builder.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\channel_trace.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\channelz.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\channelz_registry.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\connected_channel.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\context.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\handshaker.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\handshaker_factory.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\handshaker_registry.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\channel\status_util.h">
+      <Filter>channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\compression\algorithm_metadata.h">
+      <Filter>compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\compression\compression_internal.h">
+      <Filter>compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\compression\message_compress.h">
+      <Filter>compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\compression\stream_compression.h">
+      <Filter>compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\compression\stream_compression_gzip.h">
+      <Filter>compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\compression\stream_compression_identity.h">
+      <Filter>compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\debug\stats.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\debug\stats_data.h">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\http\format_request.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\http\httpcli.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\http\parser.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\json\json_common.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\json\json_reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\json\json_writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\block_annotate.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\buffer_list.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\call_combiner.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\cfstream_handle.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\closure.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\combiner.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\endpoint.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\endpoint_cfstream.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\endpoint_pair.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\error.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\error_cfstream.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\error_internal.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\ev_epoll1_linux.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\ev_epollex_linux.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\ev_epollsig_linux.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\ev_poll_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\ev_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\exec_ctx.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\executor.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\gethostname.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\gevent_util.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\internal_errqueue.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\iocp_windows.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\iomgr.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\iomgr_custom.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\iomgr_internal.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\iomgr_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\is_epollexclusive_available.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\load_file.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\lockfree_event.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\nameser.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\network_status_tracker.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\polling_entity.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\pollset.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\pollset_custom.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\pollset_set.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\pollset_set_custom.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\pollset_set_windows.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\pollset_uv.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\pollset_windows.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\port.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\resolve_address.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\resolve_address_custom.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\resource_quota.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\sockaddr.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\sockaddr_custom.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\sockaddr_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\sockaddr_utils.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\sockaddr_windows.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\socket_factory_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\socket_mutator.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\socket_utils.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\socket_utils_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\socket_windows.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\sys_epoll_wrapper.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\tcp_client.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\tcp_client_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\tcp_custom.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\tcp_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\tcp_server.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\tcp_server_utils_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\tcp_windows.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\time_averaged_stats.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\timer.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\timer_custom.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\timer_generic.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\timer_heap.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\timer_manager.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\udp_server.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\unix_sockets_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\vm_sockets.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\wakeup_fd_cv.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\wakeup_fd_pipe.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\iomgr\wakeup_fd_posix.h">
+      <Filter>iomgr\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\slice\b64.h">
+      <Filter>slice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\slice\percent_encoding.h">
+      <Filter>slice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\slice\slice_hash_table.h">
+      <Filter>slice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\slice\slice_internal.h">
+      <Filter>slice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\slice\slice_string_helpers.h">
+      <Filter>slice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\slice\slice_traits.h">
+      <Filter>slice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\slice\slice_weak_hash_table.h">
+      <Filter>slice</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

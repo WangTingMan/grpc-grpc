@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\lib\http\httpcli_security_connector.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\context\security_context.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\alts_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\composite\composite_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\credentials_metadata.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\fake\fake_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\google_default\credentials_generic.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\google_default\google_default_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\iam\iam_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\jwt\json_token.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\jwt\jwt_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\jwt\jwt_verifier.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\local\local_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\oauth2\oauth2_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\plugin\plugin_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\credentials\ssl\ssl_credentials.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\alts_security_connector.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\load_system_roots_fallback.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\load_system_roots_linux.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\local_security_connector.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\security_connector\security_connector.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\transport\client_auth_filter.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\transport\secure_endpoint.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\transport\security_handshaker.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\transport\server_auth_filter.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\transport\target_authority_table.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\transport\tsi_error.cc" />
+    <ClCompile Include="..\..\src\core\lib\security\util\json_util.cc" />
+    <ClCompile Include="..\..\src\core\lib\surface\init_secure.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\lib\security\context\security_context.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\alts\alts_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\composite\composite_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\fake\fake_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\google_default\google_default_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\iam\iam_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\jwt\json_token.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\jwt\jwt_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\jwt\jwt_verifier.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\local\local_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\oauth2\oauth2_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\plugin\plugin_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\credentials\ssl\ssl_credentials.h" />
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\alts_security_connector.h" />
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\load_system_roots.h" />
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\load_system_roots_linux.h" />
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\local_security_connector.h" />
+    <ClInclude Include="..\..\src\core\lib\security\security_connector\security_connector.h" />
+    <ClInclude Include="..\..\src\core\lib\security\transport\auth_filters.h" />
+    <ClInclude Include="..\..\src\core\lib\security\transport\secure_endpoint.h" />
+    <ClInclude Include="..\..\src\core\lib\security\transport\security_handshaker.h" />
+    <ClInclude Include="..\..\src\core\lib\security\transport\target_authority_table.h" />
+    <ClInclude Include="..\..\src\core\lib\security\transport\tsi_error.h" />
+    <ClInclude Include="..\..\src\core\lib\security\util\json_util.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{adf581e2-95f7-44dd-9f66-48f3ab3cf8b9}</ProjectGuid>
+    <RootNamespace>libgrpcsecure</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../include;$(ProjectDir)../../;$(SolutionDir)system/external/nanopb-c;$(SolutionDir)boringssl/src/include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

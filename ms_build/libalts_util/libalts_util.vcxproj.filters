@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="credentials">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="handshaker">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\check_gcp_environment.cc">
+      <Filter>credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\check_gcp_environment_linux.cc">
+      <Filter>credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\check_gcp_environment_no_op.cc">
+      <Filter>credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\check_gcp_environment_windows.cc">
+      <Filter>credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\grpc_alts_credentials_client_options.cc">
+      <Filter>credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\grpc_alts_credentials_options.cc">
+      <Filter>credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\lib\security\credentials\alts\grpc_alts_credentials_server_options.cc">
+      <Filter>credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\alts_handshaker_service_api.cc">
+      <Filter>handshaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\alts_handshaker_service_api_util.cc">
+      <Filter>handshaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\altscontext.pb.c">
+      <Filter>handshaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\handshaker.pb.c">
+      <Filter>handshaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\transport_security_common.pb.c">
+      <Filter>handshaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\handshaker\transport_security_common_api.cc">
+      <Filter>handshaker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\alts\check_gcp_environment.h">
+      <Filter>credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\lib\security\credentials\alts\grpc_alts_credentials_options.h">
+      <Filter>credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\alts_handshaker_service_api.h">
+      <Filter>handshaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\alts_handshaker_service_api_util.h">
+      <Filter>handshaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\altscontext.pb.h">
+      <Filter>handshaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\handshaker.pb.h">
+      <Filter>handshaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\transport_security_common.pb.h">
+      <Filter>handshaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\handshaker\transport_security_common_api.h">
+      <Filter>handshaker</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\bin_decoder.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\bin_encoder.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\chttp2_plugin.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\chttp2_transport.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\flow_control.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\frame_data.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\frame_goaway.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\frame_ping.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\frame_rst_stream.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\frame_settings.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\frame_window_update.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\hpack_encoder.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\hpack_mapping.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\hpack_parser.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\hpack_table.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\http2_settings.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\huffsyms.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\incoming_metadata.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\parsing.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\stream_lists.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\stream_map.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\varint.cc" />
+    <ClCompile Include="..\..\src\core\ext\transport\chttp2\transport\writing.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\bin_decoder.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\bin_encoder.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\chttp2_transport.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\flow_control.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\frame.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\frame_data.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\frame_goaway.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\frame_ping.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\frame_rst_stream.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\frame_settings.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\frame_window_update.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\hpack_encoder.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\hpack_mapping.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\hpack_parser.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\hpack_table.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\http2_settings.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\huffsyms.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\incoming_metadata.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\internal.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\stream_map.h" />
+    <ClInclude Include="..\..\src\core\ext\transport\chttp2\transport\varint.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{afbfa387-0683-46cc-8bc6-8ad5833ccf92}</ProjectGuid>
+    <RootNamespace>libgrpctransportchttp2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../include;$(ProjectDir)../../;$(SolutionDir)system/external/nanopb-c;$(SolutionDir)system/external/zlib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

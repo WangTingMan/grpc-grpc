@@ -46,4 +46,10 @@ char* grpc_sockaddr_to_uri_unix_if_possible(const grpc_resolved_address* addr) {
   return NULL;
 }
 
+char* grpc_sockaddr_to_uri_vsock_if_possible(
+  const grpc_resolved_address* resolved_addr)
+{
+  return nullptr;
+}
+
 #endif

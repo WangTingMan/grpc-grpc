@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\lib\gprpp\fork.cc" />
+    <ClCompile Include="..\..\src\core\lib\gprpp\thd_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gprpp\thd_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\alloc.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\arena.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\atm.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\cpu_iphone.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\cpu_linux.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\cpu_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\cpu_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\env_linux.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\env_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\env_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\host_port.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\log.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\log_android.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\log_linux.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\log_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\log_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\mpscq.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\murmur_hash.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\string.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\string_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\string_util_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\string_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\sync.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\sync_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\sync_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\time.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\time_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\time_precise.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\time_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\tls_pthread.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\tmpfile_msys.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\tmpfile_posix.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\tmpfile_windows.cc" />
+    <ClCompile Include="..\..\src\core\lib\gpr\wrap_memcpy.cc" />
+    <ClCompile Include="..\..\src\core\lib\profiling\basic_timers.cc" />
+    <ClCompile Include="..\..\src\core\lib\profiling\stap_timers.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\lib\gprpp\abstract.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\atomic.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\atomic_with_atm.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\atomic_with_std.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\debug_location.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\fork.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\inlined_vector.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\manual_constructor.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\memory.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\mutex_lock.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\orphanable.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\ref_counted.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\ref_counted_ptr.h" />
+    <ClInclude Include="..\..\src\core\lib\gprpp\thd.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\alloc.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\arena.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\env.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\host_port.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\mpscq.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\murmur_hash.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\spinlock.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\string.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\string_windows.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\time_precise.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\tls.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\tls_gcc.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\tls_msvc.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\tls_pthread.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\tmpfile.h" />
+    <ClInclude Include="..\..\src\core\lib\gpr\useful.h" />
+    <ClInclude Include="..\..\src\core\lib\profiling\timers.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{582ccf62-05be-4d5c-ac74-398dfa28266b}</ProjectGuid>
+    <RootNamespace>gprbase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../include;$(ProjectDir)../../;$(SolutionDir)system/external/nanopb-c;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

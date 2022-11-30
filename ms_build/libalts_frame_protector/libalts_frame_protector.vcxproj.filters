@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="crypt">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="frame_protector">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="zero_copy_frame_protector">
+      <UniqueIdentifier>{c8fa18cf-2c23-489a-88ec-ab0a4b23d3a1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\core\tsi\alts\crypt\aes_gcm.cc">
+      <Filter>crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\crypt\gsec.cc">
+      <Filter>crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\frame_protector\alts_counter.cc">
+      <Filter>frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\frame_protector\alts_crypter.cc">
+      <Filter>frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\frame_protector\alts_frame_protector.cc">
+      <Filter>frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\frame_protector\alts_record_protocol_crypter_common.cc">
+      <Filter>frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\frame_protector\alts_seal_privacy_integrity_crypter.cc">
+      <Filter>frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\frame_protector\alts_unseal_privacy_integrity_crypter.cc">
+      <Filter>frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\frame_protector\frame_handler.cc">
+      <Filter>frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_grpc_integrity_only_record_protocol.cc">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_grpc_privacy_integrity_record_protocol.cc">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_grpc_record_protocol_common.cc">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_iovec_record_protocol.cc">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_zero_copy_grpc_protector.cc">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\tsi\alts\crypt\gsec.h">
+      <Filter>crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\frame_protector\alts_counter.h">
+      <Filter>frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\frame_protector\alts_crypter.h">
+      <Filter>frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\frame_protector\alts_frame_protector.h">
+      <Filter>frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\frame_protector\alts_record_protocol_crypter_common.h">
+      <Filter>frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\frame_protector\frame_handler.h">
+      <Filter>frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_grpc_integrity_only_record_protocol.h">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_grpc_privacy_integrity_record_protocol.h">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_grpc_record_protocol.h">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_grpc_record_protocol_common.h">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_iovec_record_protocol.h">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\tsi\alts\zero_copy_frame_protector\alts_zero_copy_grpc_protector.h">
+      <Filter>zero_copy_frame_protector</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
