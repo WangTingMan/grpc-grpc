@@ -15,24 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\hello_world\helloworld.grpc.pb.cc">
+    <ClCompile Include="hellostreamingworld_client.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\hello_world\helloworld.pb.cc">
+    <ClCompile Include="..\hello_streaming_world\hellostreamingworld.grpc.pb.cc">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\hello_world\library_loader.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\examples\cpp\helloworld\greeter_client.cc">
+    <ClCompile Include="..\hello_streaming_world\hellostreamingworld.pb.cc">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\hello_world\helloworld.grpc.pb.h">
+    <ClInclude Include="..\hello_streaming_world\hellostreamingworld.grpc.pb.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\hello_world\helloworld.pb.h">
+    <ClInclude Include="..\hello_streaming_world\hellostreamingworld.pb.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

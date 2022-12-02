@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\examples\cpp\helloworld\greeter_async_client2.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="..\hello_world\helloworld.grpc.pb.cc">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -22,9 +25,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\hello_world\library_loader.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\examples\cpp\helloworld\greeter_client.cc">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
