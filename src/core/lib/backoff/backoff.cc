@@ -53,6 +53,11 @@ BackOff::BackOff(const Options& options)
 }
 
 grpc_millis BackOff::NextAttemptTime() {
+  if( current_backoff_ > options_.initial_backoff() * 1000 )
+  {
+    Reset();
+  }
+
   if (initial_) {
     initial_ = false;
     return current_backoff_ + grpc_core::ExecCtx::Get()->Now();
