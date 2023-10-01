@@ -39,6 +39,7 @@ class AlarmImpl : public CompletionQueueTag {
   AlarmImpl() : cq_(nullptr), tag_(nullptr) {
     gpr_ref_init(&refs_, 1);
     grpc_timer_init_unset(&timer_);
+    timer_.ignore_early_check = false;
   }
   ~AlarmImpl() {
     grpc_core::ExecCtx exec_ctx;
@@ -86,6 +87,15 @@ class AlarmImpl : public CompletionQueueTag {
     grpc_timer_init(&timer_, grpc_timespec_to_millis_round_up(deadline),
                     &on_alarm_);
   }
+
+  /// <wangfei>
+  /// Ignore early check.
+  /// </wangfei>
+  void IgnoreEarlyCheck()
+  {
+    timer_.ignore_early_check = true;
+  }
+
   void Cancel() {
     grpc_core::ExecCtx exec_ctx;
     grpc_timer_cancel(&timer_);
@@ -142,6 +152,11 @@ Alarm::~Alarm() {
   if (alarm_ != nullptr) {
     static_cast<internal::AlarmImpl*>(alarm_)->Destroy();
   }
+}
+
+void Alarm::IgnoreEarlyCheck()
+{
+  static_cast<internal::AlarmImpl*>( alarm_ )->IgnoreEarlyCheck();
 }
 
 void Alarm::Cancel() { static_cast<internal::AlarmImpl*>(alarm_)->Cancel(); }

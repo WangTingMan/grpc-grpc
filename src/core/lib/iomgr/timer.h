@@ -38,6 +38,8 @@ typedef struct grpc_timer {
   struct grpc_timer* hash_table_next;
 #endif
 
+  bool ignore_early_check = false;
+
   // Optional field used by custom timers
   void* custom_timer;
 } grpc_timer;

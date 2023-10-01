@@ -74,6 +74,11 @@ class Alarm : private GrpcLibraryCodegen {
     return *this;
   }
 
+  /// <wangfei>
+  /// Ignore early check.
+  /// </wangfei>
+  void IgnoreEarlyCheck();
+
   /// Cancel a completion queue alarm. Calling this function over an alarm that
   /// has already fired has no effect.
   void Cancel();

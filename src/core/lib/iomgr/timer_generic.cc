@@ -371,18 +371,28 @@ static void timer_init(grpc_timer* timer, grpc_millis deadline,
     timer->pending = false;
     GRPC_CLOSURE_SCHED(timer->closure,
                        GRPC_ERROR_CREATE_FROM_STATIC_STRING(
-                           "Attempt to create timer before initialization"));
+                         "Attempt to create timer before initialization" ) );
+    gpr_log( GPR_INFO, "Attempt to create timer before initialization" );
     return;
   }
 
   gpr_mu_lock(&shard->mu);
   timer->pending = true;
   grpc_millis now = grpc_core::ExecCtx::Get()->Now();
+  if( timer->ignore_early_check )
+  {
+    if( deadline <= now )
+    {
+      deadline = now + 1;
+    }
+  }
+
   if (deadline <= now) {
     timer->pending = false;
     GRPC_CLOSURE_SCHED(timer->closure, GRPC_ERROR_NONE);
     gpr_mu_unlock(&shard->mu);
     /* early out */
+    gpr_log( GPR_INFO, "timer early out" );
     return;
   }
 
